@@ -32,6 +32,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     container_name: jupyter
+    command: bash -c "git clone --depth 1 https://github.com/mnagaku/evaluation-tracer.git ; jupyter notebook --NotebookApp.token='etpassword'"
 volumes:
   postgres:
     external: false

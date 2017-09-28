@@ -17,22 +17,10 @@
 
 <a href="http://play-with-docker.com?stack=https://raw.githubusercontent.com/mnagaku/evaluation-tracer/master/docker-compose.yml"><img src="https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png" /></a>
 
-## Jupyter の準備
+ロボット除けをかいくぐってセッションに進むと、デプロイが始まります。
 
-デプロイが終わったら、 Play With Docker のコンソールで、 Jupyter のコンテナ名を確認します。
+## Jupyter へのアクセス
 
-```
-docker ps --filter name=jupyter
-```
+デプロイが終わったら、 Play With Docker のコンソールに「8.8.8.8」というリンクができているので、これをポチって Jupyter にアクセスします。初回のアクセスでは、トークンの入力を求められますが、デプロイを定義した[docker-compose.yml](https://github.com/mnagaku/evaluation-tracer/blob/master/docker-compose.yml#L35)にトークンを指定している箇所があり、「etpassword」と入力してください。
 
-「pwd_jupyter.1.hogehoge」な感じの名前を確認できると思います。このコンテナ名を使って、起動時ログを確認し、 Jupyter へのアクセスに必要なトークンを確認します。
-
-```
-docker logs pwd_jupyter.1.hogehoge 2>&1 | grep 'is running at'
-```
-
-Play With Docker のコンソールに「8.8.8.8」というリンクがあり、これをポチると Jupyter にアクセスできます。初回のアクセスでは、確認したトークンを入力する必要があります。
-
- Jupyter が操作できる状態になったら、[evaluation-tracer-1st.ipynb](https://raw.githubusercontent.com/mnagaku/evaluation-tracer/master/evaluation-tracer-1st.ipynb)を Jupyter に Upload してください。
-
-以降の操作は、 Upload した evaluation-tracer-1st.ipynb に続きがあります。
+Jupyter には「evaluation-tracer」フォルダができているので、その中に進み、「evaluation-tracer.ipynb」を開いてください。以降の操作は、そこに続きがあります。
