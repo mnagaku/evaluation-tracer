@@ -16,7 +16,7 @@ services:
       - postgres:/var/lib/postgresql/data
     container_name: postgres
   superset:
-    image: mnagaku/superset
+    image: amancevice/superset
     restart: always
     depends_on:
       - postgres
@@ -24,8 +24,7 @@ services:
     ports:
       - "8088:8088"
     container_name: superset
-    healthcheck:
-      disable: true
+    user: root
   jupyter:
     image: niicloudoperation/notebook
     restart: always
