@@ -1,0 +1,54 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkspace="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 992 640">
+  <defs id="defs_block">
+    <filter height="1.504" id="filter_blur" inkspace:collect="always" width="1.1575" x="-0.07875" y="-0.252">
+      <feGaussianBlur id="feGaussianBlur3780" inkspace:collect="always" stdDeviation="4.2"/>
+    </filter>
+  </defs>
+  <title>blockdiag</title>
+  <desc>blockdiag {
+    node_width = 400;
+    node_height = 160;
+    
+    evaluation-tracer -&gt; recreators
+    evaluation-tracer -&gt; newgame1
+    evaluation-tracer -&gt; newgame2
+    
+    group build {
+        label = "&#27083;&#31689;"
+        color = "#f0f8ff";
+
+        evaluation-tracer
+    }
+    group use {
+        label="&#20998;&#26512;";
+        color = "#f0f8ff";
+        
+        recreators
+        newgame1
+        newgame2
+    }
+}</desc>
+  <rect fill="rgb(240,248,255)" height="180" style="filter:url(#filter_blur)" width="416" x="56" y="30"/>
+  <rect fill="rgb(240,248,255)" height="580" style="filter:url(#filter_blur)" width="416" x="520" y="30"/>
+  <rect fill="rgb(0,0,0)" height="160" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="400" x="67" y="46"/>
+  <rect fill="rgb(0,0,0)" height="160" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="400" x="531" y="46"/>
+  <rect fill="rgb(0,0,0)" height="160" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="400" x="531" y="246"/>
+  <rect fill="rgb(0,0,0)" height="160" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="400" x="531" y="446"/>
+  <rect fill="rgb(255,255,255)" height="160" stroke="rgb(0,0,0)" width="400" x="64" y="40"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="normal" font-weight="normal" font-anchor="middle" x="66" width="396" y="142">- Evaluation Tracer &#12364;&#12391;&#12365;&#12354;&#12364;&#12387;&#12383;&#12425;</text><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="normal" font-weight="normal" font-anchor="middle" x="66" width="396" y="131">- Superset &#12398; Evaluation Tracere &#21270;</text><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="normal" font-weight="normal" font-anchor="middle" x="66" width="396" y="120">- Superset&#12398;&#21021;&#26399;&#21270;</text><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="normal" font-weight="normal" font-anchor="middle" x="66" width="396" y="109">- Jupyter&#29872;&#22659;&#12398;&#28310;&#20633;</text><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="italic" font-weight="normal" font-anchor="middle" x="66" width="396" y="85">EvaluationTracer&#12434;&#27083;&#31689;&#12375;&#12289;&#12487;&#12540;&#12479;&#12434;&#21462;&#24471;&#12539;&#20998;&#26512;&#12377;&#12427;&#28310;&#20633;&#12434;&#34892;&#12356;&#12414;&#12377;&#12290;</text><a xlink:href="evaluation-tracer.ipynb"><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="bold" font-anchor="middle" x="66" width="396" y="62">Evaluation Tracer &#12398;&#27083;&#31689;</text></a><rect fill="rgb(255,255,255)" height="160" stroke="rgb(0,0,0)" width="400" x="528" y="40"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="normal" font-weight="normal" font-anchor="middle" x="530" width="396" y="120">- &#12480;&#12483;&#12471;&#12517;&#12508;&#12540;&#12489;&#12398;&#20316;&#25104;</text><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="normal" font-weight="normal" font-anchor="middle" x="530" width="396" y="109">- &#12487;&#12540;&#12479;&#12398;&#21462;&#24471;</text><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="italic" font-weight="normal" font-anchor="middle" x="530" width="396" y="85">&#25918;&#36865;&#26399;&#38291;&#20013;&#12398;&#21508;&#12461;&#12515;&#12521;&#12463;&#12479;&#12398;&#25215;&#35469;&#21147;&#12398;&#29554;&#24471;&#37327;&#12398;&#25512;&#31227;&#12434;&#12464;&#12521;&#12501;&#21270;&#12375;&#12414;&#12377;&#12290;</text><a xlink:href="recreators.ipynb"><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="bold" font-anchor="middle" x="530" width="396" y="62">Re:CREATORS</text></a><rect fill="rgb(255,255,255)" height="160" stroke="rgb(0,0,0)" width="400" x="528" y="240"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="normal" font-weight="normal" font-anchor="middle" x="530" width="396" y="320">- &#12480;&#12483;&#12471;&#12517;&#12508;&#12540;&#12489;&#12398;&#20316;&#25104;</text><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="normal" font-weight="normal" font-anchor="middle" x="530" width="396" y="309">- &#12487;&#12540;&#12479;&#12398;&#21462;&#24471;</text><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="italic" font-weight="normal" font-anchor="middle" x="530" width="396" y="285">NewGame&#31532;1&#26399;&#12398;&#25918;&#36865;&#26399;&#38291;&#20013;&#12398;&#21508;&#12461;&#12515;&#12521;&#12463;&#12479;&#12398;&#25215;&#35469;&#21147;&#12398;&#29554;&#24471;&#37327;&#12398;&#25512;&#31227;&#12434;&#12464;&#12521;&#12501;&#21270;&#12375;&#12414;&#12377;&#12290;</text><a xlink:href="newgame1.ipynb"><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="bold" font-anchor="middle" x="530" width="396" y="262">NewGame!</text></a><rect fill="rgb(255,255,255)" height="160" stroke="rgb(0,0,0)" width="400" x="528" y="440"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="normal" font-weight="normal" font-anchor="middle" x="530" width="396" y="520">- &#12480;&#12483;&#12471;&#12517;&#12508;&#12540;&#12489;&#12398;&#20316;&#25104;</text><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="normal" font-weight="normal" font-anchor="middle" x="530" width="396" y="509">- &#12487;&#12540;&#12479;&#12398;&#21462;&#24471;</text><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="9" font-style="italic" font-weight="normal" font-anchor="middle" x="530" width="396" y="485">NewGame&#31532;2&#26399;&#12398;&#25918;&#36865;&#26399;&#38291;&#20013;&#12398;&#21508;&#12461;&#12515;&#12521;&#12463;&#12479;&#12398;&#25215;&#35469;&#21147;&#12398;&#29554;&#24471;&#37327;&#12398;&#25512;&#31227;&#12434;&#12464;&#12521;&#12501;&#21270;&#12375;&#12414;&#12377;&#12290;</text><a xlink:href="newgame2.ipynb"><text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="bold" font-anchor="middle" x="530" width="396" y="462">NewGame!!</text></a><path d="M 464 120 L 496 120" fill="none" stroke="rgb(0,0,0)"/>
+  <path d="M 496 120 L 496 320" fill="none" stroke="rgb(0,0,0)"/>
+  <path d="M 496 320 L 520 320" fill="none" stroke="rgb(0,0,0)"/>
+  <polygon fill="rgb(0,0,0)" points="527,320 520,316 520,324 527,320" stroke="rgb(0,0,0)"/>
+  <path d="M 464 120 L 520 120" fill="none" stroke="rgb(0,0,0)"/>
+  <polygon fill="rgb(0,0,0)" points="527,120 520,116 520,124 527,120" stroke="rgb(0,0,0)"/>
+  <path d="M 464 120 L 496 120" fill="none" stroke="rgb(0,0,0)"/>
+  <path d="M 496 120 L 496 520" fill="none" stroke="rgb(0,0,0)"/>
+  <path d="M 496 520 L 520 520" fill="none" stroke="rgb(0,0,0)"/>
+  <polygon fill="rgb(0,0,0)" points="527,520 520,516 520,524 527,520" stroke="rgb(0,0,0)"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="22" x="264" y="36">&#27083;&#31689;</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="22" x="728" y="36">&#20998;&#26512;</text>
+</svg>
