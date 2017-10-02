@@ -27,4 +27,4 @@ Jupyter には「evaluation-tracer」フォルダができているので、そ�
 
 ## Notebook の一覧
 
-<img src="notebooks-filled.svg">
+<object type="image/svg+xml" data="notebooks-filled.svg"></object>
