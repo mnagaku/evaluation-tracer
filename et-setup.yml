@@ -1,0 +1,23 @@
+---
+- hosts: all
+  connection: docker 
+  user: root
+  vars:
+      ansible_python_interpreter: /usr/bin/python3
+
+  tasks:
+    - name: execute superset-init
+      command: superset-init --username admin --firstname admin --lastname user --email admin@et.jp --password etpassword
+      tags:
+        - init
+
+    - name: set css background jpg
+      command: "sed -i '7475a\\  background-image: url(\"bg.jpg\");' /usr/local/lib/python3.5/dist-packages/superset/static/assets/dist/theme.86bf0d5b20edd25ee233.css"
+      tags:
+        - change_css
+
+    - name: wget jpg
+      command: "apt-get install -y wget"
+      command: "wget https://img.animatetimes.com/news/visual/2017/1499070324_1_7_fe618586985b5ddc3b8da42e58b81d2e.jpg -O /usr/local/lib/python3.5/dist-packages/superset/static/assets/dist/bg.jpg"
+      tags:
+        - get_jpg
