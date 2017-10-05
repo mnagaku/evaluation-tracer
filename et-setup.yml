@@ -16,8 +16,12 @@
       tags:
         - change_css
 
-    - name: wget jpg
+    - name: install wget
       command: "apt-get install -y wget"
+      tags:
+        - get_jpg
+
+    - name: wget jpg
       command: "wget https://img.animatetimes.com/news/visual/2017/1499070324_1_7_fe618586985b5ddc3b8da42e58b81d2e.jpg -O /usr/local/lib/python3.5/dist-packages/superset/static/assets/dist/bg.jpg"
       tags:
         - get_jpg
