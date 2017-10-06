@@ -11,17 +11,25 @@
       tags:
         - init
 
-    - name: set css background jpg
-      command: "sed -i '7475a\\  background-image: url(\"bg.jpg\");' /usr/local/lib/python3.5/dist-packages/superset/static/assets/dist/theme.86bf0d5b20edd25ee233.css"
+    - name: find css file
+      find:
+          paths: /usr/local/lib/python3.5/dist-packages/superset/static/assets/dist
+          patterns: 'theme.*.css'
+      register: css_filename
       tags:
         - change_css
 
-    - name: install wget
-      command: "apt-get install -y wget"
+    - name: set css background jpg
+      lineinfile:
+          path: "{{css_filename.files[0].path}}"
+          line: "body {\n  background-image: url(\"bg.jpg\");"
+          regexp: 'body {'
       tags:
-        - get_jpg
+        - change_css
 
     - name: wget jpg
-      command: "wget https://img.animatetimes.com/news/visual/2017/1499070324_1_7_fe618586985b5ddc3b8da42e58b81d2e.jpg -O /usr/local/lib/python3.5/dist-packages/superset/static/assets/dist/bg.jpg"
+      get_url:
+        url: https://img.animatetimes.com/news/visual/2017/1499070324_1_7_fe618586985b5ddc3b8da42e58b81d2e.jpg
+        dest: /usr/local/lib/python3.5/dist-packages/superset/static/assets/dist/bg.jpg
       tags:
         - get_jpg
