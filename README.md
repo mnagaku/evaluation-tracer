@@ -24,3 +24,5 @@
 デプロイが終わったら、 Play With Docker のコンソールに「8.8.8.8」というリンクができているので、これをポチって Jupyter にアクセスします。初回のアクセスでは、トークンの入力を求められますが、デプロイを定義した[docker-compose.yml](https://github.com/mnagaku/evaluation-tracer/blob/master/docker-compose.yml#L35)にトークンを指定している箇所があり、「etpassword」と入力してください。
 
 Jupyter には「evaluation-tracer」フォルダができているので、その中に進み、「evaluation-tracer.ipynb」を開いてください。以降の操作は、そこに続きがあります。
+
+因みに Play With Docker のコンソールの「8.0.8.8」というリンクの方は、「evaluation-tracer」へのリンクになります。念のため。
