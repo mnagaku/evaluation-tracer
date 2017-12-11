@@ -26,7 +26,7 @@ services:
     container_name: superset
     user: root
   jupyter:
-    image: niicloudoperation/notebook
+    image: mnagaku/lc-minimal-notebook
     restart: always
     ports:
       - "8888:8888"
